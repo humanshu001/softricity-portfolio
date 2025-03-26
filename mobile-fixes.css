@@ -1,0 +1,8 @@
+/* Mobile fixes for Softricity website */
+
+/* Hide interactive icons in mobile version */
+@media (max-width: 768px) {
+    .hero-image .interactive-icons {
+        display: none !important;
+    }
+}
