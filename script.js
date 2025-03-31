@@ -192,8 +192,7 @@ function initTestimonialsSlider() {
     
     // Function to update slider position
     function updateSlider() {
-        track.style.transform = `translateX(-${currentSlide * 103}%)`;
-        if(window.width > 768) {
+        if (window.innerWidth > 768) {
             track.style.transform = `translateX(-${currentSlide * 103}%)`;
         }else{
             track.style.transform = `translateX(-${currentSlide * 109}%)`;
