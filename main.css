@@ -962,13 +962,19 @@ body.menu-open {
 .main-image {
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-xl);
-    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
-    transition: all var(--transition-normal);
+    transform: perspective(1200px) rotateY(-8deg) rotateX(6deg) scale(1);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    transform-style: preserve-3d;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
 }
 
 .main-image:hover {
-    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+    transform: perspective(1200px) rotateY(0deg) rotateX(0deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 30px rgba(0, 174, 255, 0.4);
 }
+
 
 .floating-element {
     position: absolute;
